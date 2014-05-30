@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
+#import "TwoViewController.h"
+
 @interface MultiViewViewController : UIViewController
+
+
+-(IBAction)twoXibClicked:(id)sender;
 
 @end

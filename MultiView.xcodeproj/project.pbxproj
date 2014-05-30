@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5A2989193825A000283BC6 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A2988193825A000283BC6 /* OneViewController.m */; };
+		3B5A298E1938278300283BC6 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A298C1938278200283BC6 /* TwoViewController.m */; };
+		3B5A298F1938278300283BC6 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A298D1938278200283BC6 /* TwoViewController.xib */; };
 		3B840C0719372C4200AF4CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B840C0619372C4200AF4CD7 /* Foundation.framework */; };
 		3B840C0919372C4200AF4CD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B840C0819372C4200AF4CD7 /* CoreGraphics.framework */; };
 		3B840C0B19372C4200AF4CD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B840C0A19372C4200AF4CD7 /* UIKit.framework */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B5A2987193825A000283BC6 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		3B5A2988193825A000283BC6 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		3B5A298B1938278200283BC6 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		3B5A298C1938278200283BC6 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		3B5A298D1938278200283BC6 /* TwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
 		3B840C0319372C4200AF4CD7 /* MultiView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B840C0619372C4200AF4CD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B840C0819372C4200AF4CD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +87,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B5A29861938257E00283BC6 /* One */ = {
+			isa = PBXGroup;
+			children = (
+				3B5A2987193825A000283BC6 /* OneViewController.h */,
+				3B5A2988193825A000283BC6 /* OneViewController.m */,
+			);
+			name = One;
+			sourceTree = "<group>";
+		};
+		3B5A298A1938274C00283BC6 /* Two */ = {
+			isa = PBXGroup;
+			children = (
+				3B5A298B1938278200283BC6 /* TwoViewController.h */,
+				3B5A298C1938278200283BC6 /* TwoViewController.m */,
+				3B5A298D1938278200283BC6 /* TwoViewController.xib */,
+			);
+			name = Two;
+			sourceTree = "<group>";
+		};
+		3B5A29901938571400283BC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3B840C1519372C4200AF4CD7 /* MultiViewAppDelegate.h */,
+				3B840C1619372C4200AF4CD7 /* MultiViewAppDelegate.m */,
+				3B840C1819372C4200AF4CD7 /* Main.storyboard */,
+				3B840C1B19372C4200AF4CD7 /* MultiViewViewController.h */,
+				3B840C1C19372C4200AF4CD7 /* MultiViewViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		3B840BFA19372C4200AF4CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +151,9 @@
 		3B840C0C19372C4200AF4CD7 /* MultiView */ = {
 			isa = PBXGroup;
 			children = (
-				3B840C1519372C4200AF4CD7 /* MultiViewAppDelegate.h */,
-				3B840C1619372C4200AF4CD7 /* MultiViewAppDelegate.m */,
-				3B840C1819372C4200AF4CD7 /* Main.storyboard */,
-				3B840C1B19372C4200AF4CD7 /* MultiViewViewController.h */,
-				3B840C1C19372C4200AF4CD7 /* MultiViewViewController.m */,
+				3B5A29901938571400283BC6 /* Main */,
+				3B5A298A1938274C00283BC6 /* Two */,
+				3B5A29861938257E00283BC6 /* One */,
 				3B840C1E19372C4200AF4CD7 /* Images.xcassets */,
 				3B840C0D19372C4200AF4CD7 /* Supporting Files */,
 			);
@@ -232,6 +269,7 @@
 				3B840C1F19372C4200AF4CD7 /* Images.xcassets in Resources */,
 				3B840C1119372C4200AF4CD7 /* InfoPlist.strings in Resources */,
 				3B840C1A19372C4200AF4CD7 /* Main.storyboard in Resources */,
+				3B5A298F1938278300283BC6 /* TwoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B840C1319372C4200AF4CD7 /* main.m in Sources */,
+				3B5A2989193825A000283BC6 /* OneViewController.m in Sources */,
 				3B840C1D19372C4200AF4CD7 /* MultiViewViewController.m in Sources */,
+				3B5A298E1938278300283BC6 /* TwoViewController.m in Sources */,
 				3B840C1719372C4200AF4CD7 /* MultiViewAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +497,7 @@
 				3B840C3719372C4200AF4CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B840C3819372C4200AF4CD7 /* Build configuration list for PBXNativeTarget "MultiViewTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +506,7 @@
 				3B840C3A19372C4200AF4CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
